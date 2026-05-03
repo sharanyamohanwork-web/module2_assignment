@@ -1,31 +1,31 @@
-transaction_id,transaction_date,merchant_name,raw_amount,currency,status,risk_score,gateway_region,user_id,payment_method
-T001,01-03-2026, alpha mart ,420000,INR,captured,score:62,APAC,U001,UPI
-T002,01-03-2026,ALPHA MART,210000,INR,Captured ,55,,U002,Card
-T003,01-03-2026,BETA STORES ,510000,INR, CAPTURED,71, APAC ,U003,NetBanking
-T004,02-03-2026,Beta  Stores,160000,INR, failed e05 timeout ,68,apac,U004,Card
-T005,02-03-2026,Alpha Mart,390000,INR, CAPTURED,58,,U001,UPI
-T006,02-03-2026,Beta  Stores,275000,INR,Captured ,score:64,,U005,Wallet
-T007,02-03-2026,Alpha  Mart,450000,INR,chargeback,risk-83, APAC ,U006,Card
-T008,03-03-2026,BETA STORES ,340000,INR,Captured ,59,,U007,UPI
-T009,03-03-2026,Alpha Mart,125000,INR,captured,46,APAC,U002,Wallet
-T010,03-03-2026,Beta Stores,610000,INR,captured,risk-77,,U003,Card
-T011,03-03-2026,Alpha  Mart,195000,INR,FAILED e05 TIMEOUT,,,U008,UPI
-T012,04-03-2026,Beta  Stores,250000,INR,captured ,risk-61, APAC ,U009,Card
-T013,04-03-2026, alpha mart ,310000,INR,captured ,score:54,APAC,U010,UPI
-T014,04-03-2026,Beta  Stores,470000,INR,captured ,risk-73,APAC,U001,NetBanking
-T015,04-03-2026,Alpha Mart,130000,INR,captured,score:52,,U002,Card
-T016,05-03-2026,Beta  Stores,220000,INR,failed E05 timeout,risk-69,,U008,Card
-T017,05-03-2026,Beta  Stores,180000,INR,Failed E05 Timeout,score:72,apac,U008,Card
-T018,05-03-2026,BETA STORES ,145000,INR, chargeback ,risk-86, APAC ,U008,UPI
-T019,05-03-2026,Alpha  Mart,260000,INR,Failed E05 Timeout,score:67,apac,U008,Wallet
-T020,05-03-2026,Alpha Mart,520000,INR,Captured ,75,APAC,U005,UPI
-T021,06-03-2026, beta stores,330000,INR,captured ,score:63,,U006,Card
-T022,06-03-2026,ALPHA MART,410000,INR,captured ,60,APAC,U007,UPI
-T023,01-03-2026,City Pharma,5200,EUR,Captured ,42, EU ,U003,Card
-T024,02-03-2026,Eco Home,6100,EUR, chargeback ,score:65,EU,U004,Card
-T025,03-03-2026,City Pharma,2800,EUR,captured ,38,eu,U005,Wallet
-T026,05-03-2026,Eco Home,3300,EUR,Failed E05 Timeout,44, EU ,U006,NetBanking
-T027,01-03-2026,DELTA TRAVELS,7200,USD,captured ,49,us,U007,Card
-T028,02-03-2026,Delta Travels,3100,USD, CAPTURED,risk-41,US,U008,Card
-T029,04-03-2026,delta travels ,2500,USD, chargeback ,score:58,US,U009,Wallet
-T030,06-03-2026,DELTA TRAVELS,1800,USD,Failed E05 Timeout,score:47,US,U010,UPI
+transaction_id,transaction_date,merchant_name_cleaned,merchant_name,raw_amount,currency,amount_usd,status_clean,status,risk_score_clean,risk_score,gateway_region_clean,gateway_region,user_id,payment_method,merchant_id,account_manager,merchant_category,high_value_flag,high_risk_flag
+T001,01-03-2026,Alpha Mart, alpha mart ,420000,INR,4998,captured,captured,62,score:62,APAC,APAC,U001,UPI,M001,Aisha Khan,Grocery,0,0
+T002,01-03-2026,Alpha Mart,ALPHA MART,210000,INR,2499,captured,Captured ,55,55,APAC,,U002,Card,M001,Aisha Khan,Grocery,0,0
+T003,01-03-2026,Beta Stores,BETA STORES ,510000,INR,6069,captured, CAPTURED,71,71,APAC, APAC ,U003,NetBanking,M002,Rohan Mehta,Electronics,1,1
+T004,02-03-2026,Beta Stores,Beta  Stores,160000,INR,1920,failed e05 timeout, failed e05 timeout ,68,68,APAC,apac,U004,Card,M002,Rohan Mehta,Electronics,0,0
+T005,02-03-2026,Alpha Mart,Alpha Mart,390000,INR,4680,captured, CAPTURED,58,58,APAC,,U001,UPI,M001,Aisha Khan,Grocery,0,0
+T006,02-03-2026,Beta Stores,Beta  Stores,275000,INR,3300,captured,Captured ,64,score:64,APAC,,U005,Wallet,M002,Rohan Mehta,Electronics,0,0
+T007,02-03-2026,Alpha Mart,Alpha  Mart,450000,INR,5400,chargeback,chargeback,83,risk-83,APAC, APAC ,U006,Card,M001,Aisha Khan,Grocery,1,1
+T008,03-03-2026,Beta Stores,BETA STORES ,340000,INR,4114,captured,Captured ,59,59,APAC,,U007,UPI,M002,Rohan Mehta,Electronics,0,0
+T009,03-03-2026,Alpha Mart,Alpha Mart,125000,INR,1512.5,captured,captured,46,46,APAC,APAC,U002,Wallet,M001,Aisha Khan,Grocery,0,0
+T010,03-03-2026,Beta Stores,Beta Stores,610000,INR,7381,captured,captured,77,risk-77,APAC,,U003,Card,M002,Rohan Mehta,Electronics,1,1
+T011,03-03-2026,Alpha Mart,Alpha  Mart,195000,INR,2359.5,failed e05 timeout,FAILED e05 TIMEOUT,#N/A,,APAC,,U008,UPI,M001,Aisha Khan,Grocery,0,#N/A
+T012,04-03-2026,Beta Stores,Beta  Stores,250000,INR,3000,captured,captured ,61,risk-61,APAC, APAC ,U009,Card,M002,Rohan Mehta,Electronics,0,0
+T013,04-03-2026,Alpha Mart, alpha mart ,310000,INR,3720,captured,captured ,54,score:54,APAC,APAC,U010,UPI,M001,Aisha Khan,Grocery,0,0
+T014,04-03-2026,Beta Stores,Beta  Stores,470000,INR,5640,captured,captured ,73,risk-73,APAC,APAC,U001,NetBanking,M002,Rohan Mehta,Electronics,1,1
+T015,04-03-2026,Alpha Mart,Alpha Mart,130000,INR,1560,captured,captured,52,score:52,APAC,,U002,Card,M001,Aisha Khan,Grocery,0,0
+T016,05-03-2026,Beta Stores,Beta  Stores,220000,INR,2596,failed e05 timeout,failed E05 timeout,69,risk-69,APAC,,U008,Card,M002,Rohan Mehta,Electronics,0,0
+T017,05-03-2026,Beta Stores,Beta  Stores,180000,INR,2124,failed e05 timeout,Failed E05 Timeout,72,score:72,APAC,apac,U008,Card,M002,Rohan Mehta,Electronics,0,1
+T018,05-03-2026,Beta Stores,BETA STORES ,145000,INR,1711,chargeback, chargeback ,86,risk-86,APAC, APAC ,U008,UPI,M002,Rohan Mehta,Electronics,0,1
+T019,05-03-2026,Alpha Mart,Alpha  Mart,260000,INR,3068,failed e05 timeout,Failed E05 Timeout,67,score:67,APAC,apac,U008,Wallet,M001,Aisha Khan,Grocery,0,0
+T020,05-03-2026,Alpha Mart,Alpha Mart,520000,INR,6136,captured,Captured ,75,75,APAC,APAC,U005,UPI,M001,Aisha Khan,Grocery,1,1
+T021,06-03-2026,Beta Stores, beta stores,330000,INR,3927,captured,captured ,63,score:63,APAC,,U006,Card,M002,Rohan Mehta,Electronics,0,0
+T022,06-03-2026,Alpha Mart,ALPHA MART,410000,INR,4879,captured,captured ,60,60,APAC,APAC,U007,UPI,M001,Aisha Khan,Grocery,0,0
+T023,01-03-2026,City Pharma,City Pharma,5200,EUR,5616,captured,Captured ,42,42,EU, EU ,U003,Card,M003,Elena Rossi,Healthcare,0,0
+T024,02-03-2026,Eco Home,Eco Home,6100,EUR,6649,chargeback, chargeback ,65,score:65,EU,EU,U004,Card,M005,Nina Weber,Home,1,1
+T025,03-03-2026,City Pharma,City Pharma,2800,EUR,3024,captured,captured ,38,38,EU,eu,U005,Wallet,M003,Elena Rossi,Healthcare,0,0
+T026,05-03-2026,Eco Home,Eco Home,3300,EUR,3597,failed e05 timeout,Failed E05 Timeout,44,44,EU, EU ,U006,NetBanking,M005,Nina Weber,Home,0,0
+T027,01-03-2026,Delta Travels,DELTA TRAVELS,7200,USD,7200,captured,captured ,49,49,US,us,U007,Card,M004,Marcus Lee,Travel,1,0
+T028,02-03-2026,Delta Travels,Delta Travels,3100,USD,3100,captured, CAPTURED,41,risk-41,US,US,U008,Card,M004,Marcus Lee,Travel,0,0
+T029,04-03-2026,Delta Travels,delta travels ,2500,USD,2500,chargeback, chargeback ,58,score:58,US,US,U009,Wallet,M004,Marcus Lee,Travel,0,1
+T030,06-03-2026,Delta Travels,DELTA TRAVELS,1800,USD,1800,failed e05 timeout,Failed E05 Timeout,47,score:47,US,US,U010,UPI,M004,Marcus Lee,Travel,0,0
